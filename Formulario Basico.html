@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="Formulario Basico styles.css" rel="stylesheet" />
+    <title>Intro a la programación</title>
+</head>
+
+<body>
+    <div class="conteiner">
+        <h1>Formulario</h1>
+        <p>Por favor rellenar cada uno de los siguientes items:</p>
+        <div>
+            <form action="" method="post" id="form_01" name="form_01" class="formulario_basico">
+                <label for="nombre">
+                        <span>Nombre: </span>
+                        <input
+                            type="text"
+                            name="nombre"
+                            autocomplete="name"
+                            id="nombre"
+                            required
+                        />
+                    </label>
+                <label for="correo">
+                        <span>Correo: </span>
+                        <input
+                            type="email"
+                            name="correo"
+                            autocomplete="email"
+                            id="mail"
+                            required
+                        />
+                    </label>
+                <label for="pais">
+                        <span>País: </span>
+                        <input
+                            type="text"
+                            name="pais"
+                            autocomplete="country"
+                            id="pais"
+                            required
+                        />
+                    </label>
+                <label for="cp">
+                        <span>Código postal: </span>
+                        <input
+                            type="text"
+                            name="cp"
+                            autocomplete="postal-code"
+                            id="cp"
+                            required
+                        />
+                    </label>
+                <label for="password">
+                        <span>Contraseña: </span
+                        ><input
+                            type="password"
+                            name="password"
+                            alt="strongPass"
+                            required
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            maxlength="6"
+                            id="pass"
+                            minlength="4"
+                            title="Debe contener minimo 4 caracteres y un maximo de 6"
+                    /></label>
+                <input id="enviar" type="submit" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
